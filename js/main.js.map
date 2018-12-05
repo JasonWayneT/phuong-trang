@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts.js"],"names":["hello"],"mappings":";;AAAA,IAAIA,KAAK,GAAG,aAAZ","sourcesContent":["let hello = \"hello there\";"],"file":"main.js"}

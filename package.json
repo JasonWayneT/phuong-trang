@@ -1,0 +1,41 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Main Portfolio",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulpfile.js": "^2.3.1",
+    "node-sass": "^4.10.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "imagemin": "^6.0.0",
+    "precss": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonWayneT/Portfolio.git"
+  },
+  "keywords": [
+    "Jason",
+    "Taylor",
+    "Portfolio"
+  ],
+  "author": "Jason Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JasonWayneT/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JasonWayneT/Portfolio#readme"
+}
