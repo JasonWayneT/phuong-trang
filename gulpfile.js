@@ -41,16 +41,16 @@ gulp.task('sass', function () {
 
 gulp.task('serve', [/*'minifyScripts',*/ 'sass'], function(){
     browserSync.init({
-        proxy: {
-            target: "./",
-            ws: true
+        server: {
+            baseDir: "./"
+           
         },
   
         browser:'chrome.exe'
  
     });
     // gulp.watch('js/*.js',['minifyScripts']);
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./stylesheets/sass/**/*.scss', ['sass']);
     gulp.watch("./css/*.css", ['css']);
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch("./*.php").on('change', browserSync.reload);
@@ -60,8 +60,9 @@ gulp.task('css', () => {
 return gulp.src('./css/*.css')
 .pipe( sourcemaps.init() )
 .pipe( postcss([ require('precss'), require('autoprefixer') ]) )
+.pipe(rename('style.css'))
 .pipe( sourcemaps.write('.') )
-.pipe( gulp.dest('.') )
+.pipe(gulp.dest('./'))
 })
 
 gulp.task('autoprefixer',function(){

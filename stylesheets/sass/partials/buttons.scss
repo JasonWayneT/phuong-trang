@@ -1,1 +1,21 @@
 /* hello from buttons*/
+.button{
+    height:2.75rem;
+    width: 10.06rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid $highlight-color;
+    text-align:center;
+    color:white;
+    margin-top:2rem;
+    & p{
+        margin:0px;
+    }
+    &:hover{
+        transition-duration: 400ms;
+        background-color:$highlight-color;
+        color:black;
+        border:1px solid black;
+    }
+}
